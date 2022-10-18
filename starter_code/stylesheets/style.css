@@ -15,7 +15,7 @@ footer links grey: #454245
     --blueGoogle: #4285F4;
     --blue: #2E71A6;
     --black: #191817;
-    --darkerBlack: #000000;
+    --blackDarker: #000000;
     --yellow: #ECB12F;
     --grey: #454245;
 }
@@ -33,6 +33,10 @@ body {
 
 img{
     width: 100%;
+}
+
+ul {
+    list-style: none;
 }
 
 .navbar {
@@ -57,7 +61,6 @@ img{
 
 .menu-links {
     display: none;
-    list-style: none;
 }
 
 .menu-links li > a{
@@ -95,7 +98,7 @@ img{
     color: var(--yellow);
 }
 
-.header-buttons {
+.buttons-container {
     display: flex;
     flex-direction: column;
     gap: 15px;;
@@ -115,8 +118,9 @@ img{
     border: 0;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: .8rem;
     font-weight: 600;
+    letter-spacing: .115rem;
     padding: 20px;
     text-transform: uppercase;
 }
@@ -124,6 +128,17 @@ img{
 .btn-white{
     background-color: white;
     color: var(--purple);
+}
+
+.btn-primary {
+    background-color: var(--purple);
+    color: white;
+}
+
+.btn-primary-out {
+    color: var(--purple);
+    border: 2px solid var(--purple);
+    background: none;
 }
 
 .btn-google {
@@ -178,20 +193,22 @@ img{
     width: auto;
 }
 
+section h2 {
+    color: var(--black);
+    font-size: 1.6rem;
+}
+
+section p {
+    color: var(--blackDarker);
+    font-weight: 600;
+    line-height: 1.4;
+}
+
 section .content {
     display: flex;
     flex-direction: column;
     gap: 20px;
     padding: 0 15px;
-}
-
-section .content h2 {
-    font-size: 1.6rem;
-}
-
-section .content p {
-    font-weight: 600;
-    line-height: 1.4;
 }
 
 section.section-feature {
@@ -201,10 +218,47 @@ section.section-feature {
     gap: 25px;
     padding: 10px 0 60px;
 }
+
 .feature-image {
     width: calc(100% - 15px);
 }
 
 .feature-image.image-right {
     margin-left: 15px;
+}
+
+#section-highlights .content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 60px 15px 30px;
+    text-align: center;
+}
+
+.highlighted-numbers {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin: 30px 0;
+}
+
+.highlighted-numbers .numbers {
+    color: var(--purple);
+    font-size: 2.745rem;
+    font-weight: 700;
+}
+
+.highlighted-numbers .text {
+    margin: 0 auto;
+    font-size: .895rem;
+    font-weight: 700;
+    width: 200px;
+}
+
+.highlighted-numbers  sup {
+    font-size: 1rem;
+    line-height: 0;
+    position: relative;
+    margin-left: -4px;
+    top: 0.135rem
 }
