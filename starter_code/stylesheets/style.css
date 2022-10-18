@@ -127,7 +127,7 @@ ul {
     cursor: pointer;
     font-size: .8rem;
     font-weight: 600;
-    letter-spacing: .115rem;
+    letter-spacing: .055rem;
     padding: 20px;
     text-transform: uppercase;
 }
@@ -230,6 +230,10 @@ section.section-feature {
     flex-direction: column;
     gap: 25px;
     padding: 10px 0 60px;
+}
+
+section.section-feature p{
+    line-height: 1.6;
 }
 
 .feature-image {

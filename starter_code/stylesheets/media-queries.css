@@ -1,0 +1,103 @@
+@media (width > 768px) and (width < 1024px){
+    .header {
+        flex-direction: row;
+        gap: 40px;
+        padding-top: 130px;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 150px;
+    }
+
+    .header .container {
+        text-align: left;
+        flex: 5;
+        padding: 0 30px;
+    }
+
+    .header h1 {
+        font-size: 5rem;
+        margin-bottom: 20px;
+    }
+    
+    .header p {
+        font-size: 1.3rem;
+        line-height: 1.5;
+    }
+
+    .header-image {
+        overflow: hidden;
+        height: 330px;
+        flex: 3;
+    }
+    
+    .header-image img{
+        height: auto;
+        width: 200%;
+        margin-left: 0;
+    }
+
+    .btn {
+        font-size: 1rem;
+    }
+
+    section h2 {
+        font-size: 1.8rem;
+    }
+
+    section.section-feature {
+        gap: 35px;
+    }
+    section.section-feature .content{
+        margin: 0 auto;
+        padding: 0;
+        width: 520px;
+    }
+
+    .feature-image {
+        width: calc(100% - 80px);
+    }
+
+    .feature-image.image-right {
+        margin-left: 80px;
+    }
+    #section-highlights .content {
+        gap: 25px;
+        text-align: left;
+    }
+
+    #section-highlights .buttons-container {
+        flex-direction: row;
+    }
+
+    #section-highlights .buttons-container > *{
+        flex: 0 1 100%;
+    }
+
+    .highlighted-numbers {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #section-wellcome .container {
+        margin: 0 auto;
+        width: 600px;
+    }
+    .footer .container{
+        padding: 0 30px;
+    }
+    .footer-links {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer-social {
+        justify-content: flex-start;
+        gap: 20px;
+    }
+}    
+
+@media (width > 1024px) and (width < 1440px){
+    body {
+        background-color: yellow;
+    }
+}
