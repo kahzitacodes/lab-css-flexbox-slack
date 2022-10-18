@@ -10,22 +10,27 @@ footer links grey: #454245
 */
 
 :root {
-    --purple: #540B51;
-    --ivory: #F3EAE2;
-    --blueGoogle: #4285F4;
-    --blue: #2E71A6;
     --black: #191817;
     --blackDarker: #000000;
-    --yellow: #ECB12F;
+    --blue: #2E71A6;
+    --blueGoogle: #4285F4;
     --grey: #454245;
+    --greyLighter: #ebeaeb;
+    --ivory: #F3EAE2;
+    --purple: #540B51;
+    --yellow: #ECB12F;
 }
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    border: none;
 }
-
+html, body{
+    overflow-x: hidden;
+    width: 100%;
+}
 body {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-size: 16px;
@@ -40,10 +45,11 @@ ul {
 }
 
 .navbar {
-    background-color: var(--purple);
     display: flex;
     justify-content: space-between;
     padding: 30px;
+    position: absolute;
+    width: 100%;
 }
 
 .navbar .slack-logo{
@@ -74,6 +80,7 @@ ul {
     display: flex;
     flex-direction: column;
     gap: 25px;
+    padding-top: 100px;
 }
 
 .header .container{
@@ -128,6 +135,12 @@ ul {
 .btn-white{
     background-color: white;
     color: var(--purple);
+}
+
+.btn-white-out {
+    color: white;
+    border: 2px solid white;
+    background: none;
 }
 
 .btn-primary {
@@ -252,7 +265,7 @@ section.section-feature {
     margin: 0 auto;
     font-size: .895rem;
     font-weight: 700;
-    width: 200px;
+    width: 170px;
 }
 
 .highlighted-numbers  sup {
@@ -261,4 +274,107 @@ section.section-feature {
     position: relative;
     margin-left: -4px;
     top: 0.135rem
+}
+
+#section-wellcome {
+    background-color: var(--purple);
+    margin-bottom: 50px;
+    position: relative;
+}
+#section-wellcome::after {
+    background-color: var(--purple);
+    border-radius: 0 0 100% 100%;
+    bottom: -39px;
+    content: "";
+    display: block;
+    height: 240px;
+    left: -20%;
+    position: absolute;
+    width: 140%;
+    z-index: -1;
+}
+
+#section-wellcome .container{
+    padding: 60px 15px 40px;
+    text-align: center;
+}
+
+#section-wellcome h2 {
+    color: white;
+    margin-bottom: 30px;
+}
+
+.footer {
+    padding: 60px 0;
+}
+
+.footer hr {
+    display: block; height: 1px;
+    border: 0; border-top: 1px solid var(--greyLighter);
+}
+
+.footer .container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 0 20px;
+}
+
+.footer-logo {
+    height: 55px;
+    width: 55px;
+}
+
+.footer-menus {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+.footer-menus > * {
+    flex: 0 1 100%;
+}
+
+.footer-menus > ul > li {
+    color: var(--grey);
+    font-size: .875rem;
+    line-height: 1.5;
+    padding: 10px 0;
+}
+
+.footer-menus > ul > li:first-child {
+    color: var(--black);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links > li{
+    color: var(--blackDarker);
+    font-size: .875rem;
+    font-weight: 600;
+    padding: 10px 0 20px;
+}
+
+.footer-menus > ul > li:last-child,
+.footer-links > li:last-child {
+    padding-bottom: 0;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-social i {
+    font-size: 1.5rem;
+}
+
+.footer small {
+    color: var(--grey);
+    font-size: 0.795rem;
 }
