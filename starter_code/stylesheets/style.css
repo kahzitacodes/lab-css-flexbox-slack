@@ -12,8 +12,8 @@ footer links grey: #454245
 :root {
     --purple: #540B51;
     --ivory: #F3EAE2;
-    --blue: #4285F4;
-    --otherBlue: #2E71A6;
+    --blueGoogle: #4285F4;
+    --blue: #2E71A6;
     --black: #191817;
     --darkerBlack: #000000;
     --yellow: #ECB12F;
@@ -60,4 +60,83 @@ body {
     color: white;
     font-weight: 600;
     text-decoration: none;
+}
+
+.header {
+    background-color: var(--purple);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.header .container{
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    text-align: center;
+    gap: 25px;
+}
+
+.header h1 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.header p {
+    color: white;
+}
+
+.header p b{
+    color: var(--yellow);
+}
+
+.header-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;;
+}
+
+.header-image {
+    overflow: hidden;
+    height: 330px;
+}
+
+.header-image img{
+    width: 160%;
+    margin-left: -30px;
+}
+
+.btn {
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+.btn-white{
+    background-color: white;
+    color: var(--purple);
+}
+
+.btn-google {
+    background-color: var(--blueGoogle);
+    color: white;    
+    position: relative;
+}
+.btn-google .btn-img {
+    background-color: white;
+    border-radius: 2px;
+    display: block;
+    height: 45px;
+    left: 7px;
+    position: absolute;
+    top: 7px;
+    width: 45px;
+}
+img{
+    width: 100%;
 }
