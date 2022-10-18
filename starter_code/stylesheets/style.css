@@ -8,3 +8,56 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+
+:root {
+    --purple: #540B51;
+    --ivory: #F3EAE2;
+    --blue: #4285F4;
+    --otherBlue: #2E71A6;
+    --black: #191817;
+    --darkerBlack: #000000;
+    --yellow: #ECB12F;
+    --grey: #454245;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.navbar {
+    background-color: var(--purple);
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.navbar .slack-logo{
+    width: 105px;
+}
+
+.navbar button{
+    background-color: transparent;
+    border: 0;
+}
+
+.navbar button + button{
+    margin-left: 20px;
+}
+
+.menu-links {
+    display: none;
+    list-style: none;
+}
+
+.menu-links li > a{
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
