@@ -1,5 +1,5 @@
-@media (width > 768px) and (width < 1024px){
-    .header {
+@media screen and (min-width: 768px){
+    .header .container{
         flex-direction: row;
         gap: 40px;
         padding-top: 130px;
@@ -8,7 +8,7 @@
         padding-bottom: 150px;
     }
 
-    .header .container {
+    .header .content {
         text-align: left;
         flex: 5;
         padding: 0 30px;
@@ -25,8 +25,8 @@
     }
 
     .header-image {
-        overflow: hidden;
-        height: 330px;
+        overflow:visible;
+        height: auto;
         flex: 3;
     }
     
@@ -36,7 +36,7 @@
         margin-left: 0;
     }
 
-    .btn {
+    .btn-lg {
         font-size: 1rem;
     }
 
@@ -44,7 +44,7 @@
         font-size: 1.8rem;
     }
 
-    section.section-feature {
+    section.section-feature .container{
         gap: 35px;
     }
     section.section-feature .content{
@@ -61,21 +61,22 @@
         margin-left: 80px;
     }
     #section-highlights .content {
+        align-items: center;
         gap: 25px;
-        text-align: left;
+        padding: 60px 40px 30px;
     }
 
     #section-highlights .buttons-container {
         flex-direction: row;
     }
 
-    #section-highlights .buttons-container > *{
-        flex: 0 1 100%;
-    }
-
     .highlighted-numbers {
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
+    }
+
+    .highlighted-numbers > li {
+        text-align: left;
     }
 
     #section-wellcome .container {
@@ -96,8 +97,228 @@
     }
 }    
 
-@media (width > 1024px) and (width < 1440px){
-    body {
-        background-color: yellow;
+@media screen and (min-width: 1024px){
+
+    .navbar {
+        padding: 40px;
+    }
+
+    .navbar-menu {
+        align-items: center;
+        display: flex;
+        gap: 50px;
+    }
+
+    .menu-links {
+        display: flex;
+        justify-content: space-around;
+        gap: 30px;
+    }
+
+    .btn-menu {
+        display: none;
+    }
+
+    .cta-buttons {
+        display: flex;
+        gap: 30px;
+    }
+
+    .menu-actions {
+        display: flex;
+        gap: 30px;
+    }
+
+    .header .container{
+        gap: 20px;
+    }
+
+    .header .content {
+        flex: 7;
+    }
+
+    .header-image {
+        flex: 6;
+    }
+
+    .header p {
+        font-size: 1.5rem;
+    }
+
+    #section-companies p{
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+
+    #section-companies > div {
+        justify-content: space-between;
+        padding: 0 40px;
+    }
+
+    #section-companies > div > img {
+        height: 40px;
+    }
+
+    section h2 {
+        font-size: 2.6rem;
+    }
+
+    section.section-feature .container{
+        align-items: center;
+        flex-direction: row;
+    }
+
+    section.section-feature .container{
+        padding: 60px 0 60px;
+    }
+
+    section.section-feature .container > *{
+        flex: 1;
+    }
+
+    section.section-feature:nth-child(even) .content{
+        margin: 0 auto;
+        padding: 0 65px 0 100px;
+    }
+
+    section.section-feature:nth-child(odd) .container{
+        flex-direction: row-reverse;
+    }
+
+    section.section-feature:nth-child(odd) .content{
+        margin: 0 auto;
+        padding: 0 100px 0 65px;
+    }
+
+    .feature-image {
+        width: 100%;
+    }
+
+    .feature-image.image-right {
+        margin-left: 0;
+    }
+
+    #section-highlights .content {
+        padding: 60px 50px 30px;
+    }
+
+    .highlighted-numbers {
+        justify-content: space-between;
+        margin: 50px 0;
+        width: 100%;
+    }
+    
+    .highlighted-numbers .numbers {
+        font-size: 4rem;
+    }
+    
+    .highlighted-numbers .text {
+        font-size: 1rem;
+        width: 190px;
+    }
+   
+    #section-wellcome .container {
+        width: auto;
+        padding: 60px 40px 40px;
+    }
+
+    #section-wellcome .buttons-container {
+        flex-direction: row;
+        gap: 15px;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .header .container{
+        width: 1240px;
+        margin: 0 auto;
+        gap: 20px;
+    }
+
+    .header h1 {
+        margin-bottom: 80px;
+    }
+
+    .header .buttons-container {
+        flex-direction: row;
+    }
+
+    .header .content {
+        padding-left: 0;
+    }
+
+    .header .btn-lg {
+        font-size: .9rem;
+    }
+
+    .btn-google .btn-img {
+        left: 5px;
+        top: 5px;
+    }
+
+    .header .btn-google span.btn-label {
+        padding-left: 40px;
+    }
+
+    .header .buttons-container > *,
+    .header .container > * {
+        flex: 1;
+    }
+
+    .header-image img {
+        width: 100%;
+    }
+
+    #section-companies > div {
+        justify-content: center;
+        gap: 80px;
+    }
+
+    section.section-feature .container {
+        width: 1240px;
+        margin: 0 auto;
+    }
+
+    section.section-feature:nth-child(even) .content{
+        padding: 0 0 0 100px;
+    }
+
+    section.section-feature:nth-child(odd) .content{
+        padding: 0 100px 0 0px;
+    }
+
+    #section-highlights .content {
+        padding: 90px 0 60px;
+    }
+
+    .highlighted-numbers {
+        justify-content: space-evenly;
+    }
+
+    #section-wellcome {
+        margin-bottom: 90px;
+
+    }
+
+    #section-wellcome::after {
+        bottom: -78px;
+        height: 310px;
+        left: -10%;
+        width: 120%;
+    }
+
+    .footer-menus > * {
+        flex: 0 1 auto;
+    }
+
+    .footer .container {
+        width: 1240px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .footer-social {
+        gap: 60px;
     }
 }

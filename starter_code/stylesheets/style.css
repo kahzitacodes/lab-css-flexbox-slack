@@ -69,7 +69,7 @@ ul {
     display: none;
 }
 
-.menu-links li > a{
+.link-menu{
     color: white;
     font-weight: 600;
     text-decoration: none;
@@ -77,13 +77,16 @@ ul {
 
 .header {
     background-color: var(--purple);
+}
+
+.header .container {
+    padding-top: 100px;
     display: flex;
     flex-direction: column;
     gap: 25px;
-    padding-top: 100px;
 }
 
-.header .container{
+.header .content{
     display: flex;
     flex-direction: column;
     padding: 0 20px;
@@ -125,11 +128,21 @@ ul {
     border: 0;
     border-radius: 5px;
     cursor: pointer;
-    font-size: .8rem;
     font-weight: 600;
     letter-spacing: .055rem;
-    padding: 20px;
+    text-decoration: none;
     text-transform: uppercase;
+}
+
+.btn-lg {
+    font-size: .9rem;
+    padding: 20px 25px;
+}
+
+.btn-sm {
+    font-size: .9rem;;
+    font-weight: 700;
+    padding: 15px;
 }
 
 .btn-white{
@@ -160,9 +173,11 @@ ul {
     position: relative;
 }
 .btn-google .btn-img {
+    align-items: center;
     background-color: white;
     border-radius: 2px;
-    display: block;
+    display: flex;
+    justify-content: center;
     height: 45px;
     left: 7px;
     position: absolute;
@@ -170,15 +185,28 @@ ul {
     width: 45px;
 }
 
+.btn-google .btn-img img {
+    height: 33px;
+    width: 30px;
+}
+
 .link {
     color: var(--blue);
-    font-size: 1.125rem;
+    font-size: 1rem;
     text-decoration: none;
+    font-weight: 600;
 }
 
 .link span {
-    margin-right: 10px;
-    font-weight: 600;
+    margin-right: 5px;
+}
+
+.link::after {
+    content: '';
+    display: inline-block;
+    background: url(../images/icon-arrow-right.png) no-repeat;
+    height: 13px;
+    width: 19px;
 }
 
 #section-companies {
@@ -189,7 +217,7 @@ ul {
 
 #section-companies p{
     font-size: .945rem;
-    font-weight: 600;
+    font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 30px;
 }
@@ -226,6 +254,9 @@ section .content {
 
 section.section-feature {
     background-color: var(--ivory);
+}
+
+section.section-feature .container {
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -380,5 +411,16 @@ section.section-feature p{
 
 .footer small {
     color: var(--grey);
-    font-size: 0.795rem;
+    font-size: 0.725rem;
+}
+.link-download {
+    display: flex;
+}
+.link-download::before {
+    content: '';
+    display: inline-block;
+    background: url(../images/icon-download.svg) no-repeat;
+    height: 16px;
+    width: 19px;
+    margin-right: 5px;
 }
